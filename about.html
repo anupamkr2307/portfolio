@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Anupam Kumar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #1A1C39;
+            color: #F2EFEF;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            background-color: #551FA7;
+            padding: 0 20px;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #F2EFEF;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: aqua;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .hero {
+            text-align: center;
+            margin: 50px 0;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+        .skills {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 50px 0;
+        }
+        .skill {
+            background-color: #2D2F54;
+            border-radius: 10px;
+            padding: 20px;
+            width: 30%;
+            margin: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .skill:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #251F6D;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"><h1>Anupam's Portfolio</h1></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <h1>About Me</h1>
+            <p>Hi! I'm Anupam, a passionate developer with a love for creating beautiful and functional web applications.</p>
+        </div>
+
+        <div class="skills">
+            <div class="skill">
+                <h2>Web Development</h2>
+                <p>Building responsive and interactive websites using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="skill">
+                <h2>Data Science</h2>
+                <p>Analyzing data to extract meaningful insights and drive decision-making.</p>
+            </div>
+            <div class="skill">
+                <h2>Digital Marketing</h2>
+                <p>Creating effective marketing strategies to enhance online presence.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Anupam Kumar. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anupam Kumar Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: rgb(26, 28, 57);
+            color: rgb(242, 239, 239);
+            font-family: 'Poppins', sans-serif;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(85, 31, 167);
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            color: aqua;
+            font-size: 1.05rem;
+        }
+        main hr {
+            border: 0;
+            background: rgb(206, 19, 206);
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 120px 0;
+        }
+        .leftsection {
+            font-size: 3rem;
+            margin: 70px 0;
+        }
+        .fit-img {
+            width: 800px;
+            height: 800px;
+            object-fit: cover;
+            margin: 50px 0;
+        }
+        .name {
+            color: rgb(113, 15, 218);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"><h1>Anupam's Portfolio</h1></div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="name">ANUPAM</span>
+                <div>I am a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="webD.png" alt="responsive img" class="fit-img">
+            </div>
+        </section>
+        <hr>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Data Scientist', 'Digital Marketing'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+</html>

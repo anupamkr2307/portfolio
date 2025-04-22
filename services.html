@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Anupam Kumar Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(26, 28, 57);
+            color: rgb(242, 239, 239);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(85, 38, 156);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: aqua;
+            font-size: 1.05rem;
+        }
+
+        .header {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink-caret {
+            from,
+            to {
+                border-color: transparent;
+            }
+
+            50% {
+                border-color: rgba(255, 255, 255, 0.75);
+            }
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        .service-card {
+            background-color: rgb(239, 243, 247);
+            color: black;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card h2 {
+            margin-bottom: 10px;
+            color: rgb(85, 31, 167);
+        }
+
+        footer {
+            background-color: rgb(63, 38, 146);
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><h1>Anupam's Portfolio</h1></div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="header">
+            <h1>My Skills</h1>
+        </div>
+
+        <div class="services">
+            <div class="service-card">
+                <h2>Web Development</h2>
+                <p>Creating responsive and dynamic websites tailored to your needs.</p>
+            </div>
+
+            <div class="service-card">
+                <h2>Data Analysis</h2>
+                <p>Transforming data into actionable insights to drive your business forward.</p>
+            </div>
+
+            <div class="service-card">
+                <h2>Digital Marketing</h2>
+                <p>Helping you reach your audience through effective online marketing strategies.</p>
+            </div>
+
+            <div class="service-card">
+                <h2>UI/UX Design</h2>
+                <p>Designing user-friendly interfaces that enhance user experience.</p>
+            </div>
+
+            <div class="service-card">
+                <h2>Machine Learning</h2>
+                <p>Building predictive models to help automate decision-making processes.</p>
+            </div>
+
+            <div class="service-card">
+                <h2>Artificial Intelligence</h2>
+                <p>Implementing AI solutions to enhance business operations and customer experiences.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Anupam Kumar. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
